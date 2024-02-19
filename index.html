@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teenage Pregnancy Awareness</title>
+    <meta name="description" content="Learn about the causes, risks, and consequences of teenage pregnancy. Find resources, support options, and prevention strategies.">
+    <meta name="keywords" content="teenage pregnancy, pregnancy awareness, pregnancy prevention, teenage health, adolescent health">
     <link rel="stylesheet" href="../Teenage Pregnancy/style.css">
 </head>
 <body>
@@ -15,7 +17,9 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#resources">Resources</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
                     <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#videos">Videos</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -182,10 +186,29 @@
                     <input type="radio" name="question1" value="yes"> Yes
                     <input type="radio" name="question1" value="no"> No
                 </label>
+                <br>
                 <label>
                     Question 2: Do you use contraception regularly?
                     <input type="radio" name="question2" value="yes"> Yes
                     <input type="radio" name="question2" value="no"> No
+                </label>
+                <br>
+                <label>
+                    Question 3: Do you have access to comprehensive sex education?
+                    <input type="radio" name="question3" value="yes"> Yes
+                    <input type="radio" name="question3" value="no"> No
+                </label>
+                <br>
+                <label>
+                    Question 4: Do you have access to reproductive health services?
+                    <input type="radio" name="question4" value="yes"> Yes
+                    <input type="radio" name="question4" value="no"> No
+                </label>
+                <br>
+                <label>
+                    Question 5: Are you aware of the potential consequences of teenage pregnancy?
+                    <input type="radio" name="question5" value="yes"> Yes
+                    <input type="radio" name="question5" value="no"> No
                 </label>
                 <!-- Add more questions as needed -->
                 <button onclick="calculateRiskAssessment()">Submit</button>
@@ -225,6 +248,9 @@
             
             <h3>9. Where can I find more information and resources about teenage pregnancy?</h3>
             <p>You can find more information and resources about teenage pregnancy from reputable organizations, healthcare providers, government agencies, and educational websites. Additionally, this website provides links to various resources and support services for pregnant teenagers.</p>
+
+            <h3>10. Where can I find more information and resources about teenage pregnancy?</h3>
+            <p>You can find more information and resources about teenage pregnancy from reputable organizations, healthcare providers, government agencies, and educational websites. Additionally, this website provides links to various resources and support services for pregnant teenagers.</p>
         </div>
     </section>
     
@@ -233,16 +259,14 @@
             <h2>Video Content</h2>
             <div class="video">
                 <h3>Interview with Healthcare Professionals</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_iqLuGLH5lQ?si=J0FU4JHSRod9xr6f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video">
                 <h3>Educational Video: Teenage Pregnancy Prevention</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
-            </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yYoyBdtGwx4?si=BtrQowKct70N7CBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
             <div class="video">
                 <h3>Inspirational Story: Overcoming Teenage Pregnancy Challenges</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
-            </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F1G91jXIOCE?si=8whbnZnaSI8WSii-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
         </div>
     </section>
     
@@ -252,31 +276,29 @@
             <h2>Contact Us</h2>
             <p>Get in touch with us for more information or support.</p>
             
-            <form action="#" method="post">
+            <form action="submit.php" method="post" id="contact-form">
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="name-error"></div>
                 </div>
                 <div>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error"></div>
                 </div>
                 <div>
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="error-message" id="message-error"></div>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit" id="submit-btn">Send Message</button>
             </form>
+            <div class="success-message" id="success-message">Your message has been sent successfully!</div>
         </div>
     </section>
     
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Teenage Pregnancy Awareness. All rights reserved.</p>
-        </div>
-    </footer>
-
+    
     <script src="../Teenage Pregnancy/script.js"></script>
 </body>
 </html>
