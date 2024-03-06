@@ -6,54 +6,74 @@
     <title>Quiz</title>
 </head>
 <body>
-<section id="interactive-tools" class="interactive-tools">
-    <div class="container">
-        <h2>Interactive Tools</h2>
-        <div class="tool">
-            <h3>Due Date Calculator</h3>
-            <p>Enter the date of your last menstrual period to estimate your due date:</p>
-            <input type="date" id="last-menstrual-date">
-            <button onclick="calculateDueDate()">Calculate Due Date</button>
-            <p>Your estimated due date is: <span id="due-date-result"></span></p>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <a href="index.html">Home &nbsp;&nbsp;&nbsp;</a>
+                    <a href="resources.html">Resources&nbsp;&nbsp;&nbsp;</a>
+                    <a href="statistics.html">Statistics&nbsp;&nbsp;&nbsp;</a>
+                    <a href="quiz.html">Quiz&nbsp;&nbsp;&nbsp;</a>
+                    <a href="faqs.html">FAQs&nbsp;&nbsp;&nbsp;</a>
+                    <a href="about.html">About Us&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#contact">Contact</a>
+                </ul>
+            </nav>
         </div>
-        <div class="tool">
-            <h3>Risk Assessment Quiz</h3>
-            <p>Take this quiz to assess your risk factors for teenage pregnancy:</p>
-            <label>
-                Question 1: Are you sexually active?
-                <input type="radio" name="question1" value="yes"> Yes
-                <input type="radio" name="question1" value="no"> No
-            </label>
-            <br>
-            <label>
-                Question 2: Do you use contraception regularly?
-                <input type="radio" name="question2" value="yes"> Yes
-                <input type="radio" name="question2" value="no"> NO
-            </label>
-            <br>
-            <label>
-                Question 3: Do you have access to comprehensive sex education?
-                <input type="radio" name="question3" value="yes"> Yes
-                <input type="radio" name="question3" value="no"> No
-            </label>
-            <br>
-            <label>
-                Question 4: Do you have access to reproductive health services?
-                <input type="radio" name="question4" value="yes"> Yes
-                <input type="radio" name="question4" value="no"> No
-            </label>
-            <br>
-            <label>
-                Question 5: Are you aware of the potential consequences of teenage pregnancy?
-                <input type="radio" name="question5" value="yes"> Yes
-                <input type="radio" name="question5" value="no"> No
-            </label>
+    </header>
+    <section id="interactive-tools" class="interactive-tools">
+        <div class="container">
+            <h1>Interactive Tools</h1>
+            <div class="tool">
+                <h2>Due Date Calculator</h2>
+                <p>Enter the date of your last menstrual period to estimate your due date:</p>
+                <input type="date" id="last-menstrual-date">
+                <button onclick="calculateDueDate()">Calculate Due Date</button>
+                <p>Your estimated due date is: <span id="due-date-result"></span></p>
+            </div>
+            <div class="tool">
+                <h2>Risk Assessment Quiz</h2>
+                <p>Take this quiz to assess your risk factors for teenage pregnancy:</p>
+                <label>
+                    Question 1: Are you sexually active?
+                    <input type="radio" name="question1" value="yes"> Yes
+                    <input type="radio" name="question1" value="no"> No
+                </label>
+                <br>
+                <label>
+                    Question 2: Do you use contraception regularly?
+                    <input type="radio" name="question2" value="yes"> Yes
+                    <input type="radio" name="question2" value="no"> No
+                </label>
+                <br>
+                <label>
+                    Question 3: Do you have access to comprehensive sex education?
+                    <input type="radio" name="question3" value="yes"> Yes
+                    <input type="radio" name="question3" value="no"> No
+                </label>
+                <br>
+                <label>
+                    Question 4: Do you have access to reproductive health services?
+                    <input type="radio" name="question4" value="yes"> Yes
+                    <input type="radio" name="question4" value="no"> No
+                </label>
+                <br>
+                <label>
+                    Question 5: Are you aware of the potential consequences of teenage pregnancy?
+                    <input type="radio" name="question5" value="yes"> Yes
+                    <input type="radio" name="question5" value="no"> No
+                </label>
             <!-- Add more questions as needed -->
-            <button onclick="calculateRiskAssessment()">Submit</button>
-            <p>Your risk assessment result: <span id="risk-assessment-result"></span></p>
+                <button onclick="calculateRiskAssessment()">Submit</button>
+                <p>Your risk assessment result: <span id="risk-assessment-result"></span></p>
+            </div>
         </div>
-        <!-- Add more interactive tools as needed -->
-    </div>
-</section>
+    </section>
+
+    <footer>
+        <div class="contact">
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
 </body>
 </html>
